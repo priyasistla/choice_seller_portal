@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script>
+    <style>
+        .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+            padding-right: 0;
+            footer .mdl-mini-footer
+
+        {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 300px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+            /* Style the sidenav links and the dropdown button */
+            .sidenav a, .dropdown-btn {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: none;
+                display: block;
+                border: none;
+                background: none;
+                width: 100%;
+                text-align: left;
+                cursor: pointer;
+                outline: none;
+            }
+
+                /* On mouse-over */
+                .sidenav a:hover, .dropdown-btn:hover {
+                    color: #21618C;
+                }
+
+        /* Main content */
+        .main {
+            margin-left: 200px; /* Same as the width of the sidenav */
+            font-size: 20px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        /* Add an active class to the active dropdown button */
+        .active {
+            background-color: #F5EEF8;
+            color: white;
+        }
+
+        /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+        .dropdown-container {
+            display: none;
+            background-color: #262626;
+            padding-left: 8px;
+        }
+
+        /* Optional: Style the caret down icon */
+        .fa-caret-down {
+            float: right;
+            padding-right: 8px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+                .sidenav a {
+                    font-size: 18px;
+                }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+                <!-- Top row, always visible -->
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">CHOICE</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                        <input type="search" id="search">&nbsp;<button>Search</button>
+                        <!--<label class="mdl-button mdl-js-button mdl-button--icon"
+           for="waterfall-exp">
+        <i class="material-icons">Search</i>
+    </label>-->
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="sample"
+                                   id="waterfall-exp">
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom row, not visible on scroll -->
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+                    <nav class="mdl-navigation">
+                        <!--  <a class="mdl-navigation__link" href="file:///C:/Users/user/Desktop/varun.html">Login</a>-->
+                        <!-- <a class="mdl-navigation__link" href="file:///C:\Users\priya\source\repos\project_lt\app\reg.html">Signup</a>-->
+                        <!--<a class="mdl-navigation__link" href="reg.html">Signup</a>-->
+                        <h3><a class="mdl-navigation__link" href="home.html">Home</a></h3>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Categories</span>
+                <nav class="mdl-navigation">
+                    <div class="sidenav">
+                        <!-- <a class="mdl-navigation__link" href="file:///C:/Users/user/Desktop/ElectronicGadgets.html">Electronic Gadgets</a>-->
+                        <button class="dropdown-btn">
+                            <a>Electronic Gadgets</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Mobiles.html">Mobiles</a>
+                            <a href="Laptops.html">Laptops</a>
+                            <a href="Power_Banks.html">Power Banks</a>
+                            <a href="Earphones_Headsets.html">Earphones/Headsets</a>
+                            <a href="Bluetooth.html">Bluetooth Speaker</a>
+                            <a href="Pendrives.html">Pendrives</a>
+                        </div>
+                        <!--<a class="mdl-navigation__link" href="">Clothes</a>-->
+                        <button class="dropdown-btn">
+                            <a>Clothing</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Men.html">Men</a>
+                            <a href="Women.html">Women</a>
+                            <a href="Kids.html">Kids</a>
+
+
+
+                        </div>
+
+                        <!--<a class="mdl-navigation__link" href="">Home & Furniture</a>-->
+                        <button class="dropdown-btn">
+                            <a>Home & Furniture</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Kitchen.html">Kitchen Furniture</a>
+                            <a href="Living_room.html">LivingRoom Furniture</a>
+                            <a href="Bed_room.html">BedRoom Furniture</a>
+                            <a href="Bath_room.html">WashRoom Furniture</a>
+
+                        </div>
+                        <!-- <a class="mdl-navigation__link" href="">Footwear</a>-->
+                        <button class="dropdown-btn">
+                            <a>Footwear</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Men_foot.html">Men</a>
+                            <a href="Women_foot.html">Woman</a>
+                            <a href="Kids_foot.html">Kids</a>
+
+                        </div>
+                        <!--<a class="mdl-navigation__link" href="">Sports,Books & More </a>-->
+                        <button class="dropdown-btn">
+                            <a>Books</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Autobiography.html">Autobiography</a>
+                            <a href="Horror.html">Horror</a>
+                            <a href="Sci_fi.html">Science Fiction</a>
+                            <a href="#">Romance</a>
+                            <a href="Philosophy.html">Philosophy</a>
+
+                        </div>
+                        <button class="dropdown-btn">
+                            <a>Sports</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Cricket.html">Cricket</a>
+                            <a href="Football.html">Football</a>
+                            <a href="Swimming.html">Swimming</a>
+                            <a href="Camping.html">Camping and Hiking</a>
+                            <a href="Badminton.html">Badminton</a>
+                            <a href="Gym.html">Gym Equipment</a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <h3 align="center">Kids</h3>
+                <div class="page-content">
+                    <div class="mdl-grid">
+                        <div class="mdl-grid">
+                            <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <img src="images/clothing/kids/1-2-years-006-shirt-green-xboyz-original-imaffdsjv3crhcsa.jpeg" width="50%" style="position:relative;left:15%"/>
+                                    <div text-align:center style="position:relative;left:25%">
+                                        <a href="product1.html">5-6YearKids</a>
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <img src="images/clothing/kids/12-13-years-5202-pink-xboyz-original-imafhrzgz9h4gbz4.jpeg" width="50%" style="position:relative;left:15%"/>
+                                    <div text-align:center style="position:relative;left:25%">
+                                        <a href="product1.html">7-8YearKids</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo"></div>
+            <ul class="mdl-mini-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <footer class="mdl-mini-footer" style="position:fixed;bottom:0;left:0;width:100%;height:0%">
+        <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo"></div>
+            <ul class="mdl-mini-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+

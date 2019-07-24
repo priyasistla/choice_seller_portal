@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
+    <!--<input type="hidden" name="otracker" value="search"><link rel="preload" href="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fk-logo_9fddff.png" as="image">-->
+    <!--<link rel="shortcut icon" href="https://img1a.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico">-->
+    <link type="application/opensearchdescription+xml" rel="search" href="/osdd.xml?v=2">
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script>
+    <style>
+        .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+            padding-right: 0;
+            
+        }
+   .sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: none;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #21618C;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color:#F5EEF8;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.footer{
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+}
+.footer a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.footer a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+                <!-- Top row, always visible -->
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">CHOICE</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                        <input type="search" id="search">&nbsp;<button>Search</button>
+                        <!--<label class="mdl-button mdl-js-button mdl-button--icon"
+                           for="waterfall-exp">
+                        <i class="material-icons">Search</i>
+                    </label>-->
+                        <!--<div class="col-12-12_2tVpYj">
+                            <div class="08zs_u">
+                                <input type="text" value class="LM6RPg" title="Search for products" name="q" autocomplete="off" placeholder="Search for products" />
+                            </div>
+                            <button class="vh79eN" type="submit">
+                                <svg width="20" height="20" viewBox="0 0 17 18" class xmls="http://www.w3.org/2000/svg">
+                                    <g fill="#287451" fill-rule="evenodd">
+                                        <path class="_2BhAHa" d="m11.618 9.89714.225 4.212c.092.092.101.232.02.3131-1.465 1.46c-.081.081-.221.072-.314-.021-4.216-4.203"></path>
+                                        <path class="_2BhAHa" d="m6.486 10.901c-2.42 0.-4.381-1.956-4.381 0-2.431 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467 0-3.572-2.904-6.467-6.486-6.467">
+
+                                        </path>
+                                    </g>
+                                </svg>
+                           Search </button>
+                            <input type="hidden" name="otracker" value="search">
+                            <input type="hidden" name="otracker1" value="search">
+                            <input type="hidden" name="marketplace" value="FLIPKART">
+                            <input type="hidden" name="as-show" value="on">
+                            <input type="hidden" name="as" value="off">
+                         </div>-->
+
+
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="sample"
+                                   id="waterfall-exp">
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom row, not visible on scroll -->
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link" href="file:///C:/Users/user/Desktop/varun.html">Login</a>
+                        <!-- <a class="mdl-navigation__link" href="file:///C:\Users\priya\source\repos\project_lt\app\reg.html">Signup</a>-->
+                        <a class="mdl-navigation__link" href="reg.html">Signup</a>
+
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Categories</span>
+                <nav class="mdl-navigation">
+                    <div class="sidenav">
+                        <!-- <a class="mdl-navigation__link" href="file:///C:/Users/user/Desktop/ElectronicGadgets.html">Electronic Gadgets</a>-->
+                        <button class="dropdown-btn">
+                            <a>Electronic Gadgets</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Mobiles.html">Mobiles</a>
+                            <a href="Laptops.html">Laptops</a>
+                            <a href="Power_Banks.html">Power Banks</a>
+                            <a href="Earphones_Headsets.html">Earphones/Headsets</a>
+                            <a href="Bluetooth.html">Bluetooth Speaker</a>
+                            <a href="Pendrives.html">Pendrives</a>
+                        </div>
+                        <!--<a class="mdl-navigation__link" href="">Clothes</a>-->
+                        <button class="dropdown-btn">
+                            <a>Clothing</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Men.html">Men</a>
+                            <a href="Women.html">Women</a>
+                            <a href="Kids.html">Kids</a>
+
+
+
+                        </div>
+
+                        <!--<a class="mdl-navigation__link" href="">Home & Furniture</a>-->
+                        <button class="dropdown-btn">
+                            <a>Home & Furniture</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Kitchen.html">Kitchen Furniture</a>
+                            <a href="Living_room.html">LivingRoom Furniture</a>
+                            <a href="Bed_room.html">BedRoom Furniture</a>
+                            <a href="Bath_room.html">WashRoom Furniture</a>
+
+                        </div>
+                        <!-- <a class="mdl-navigation__link" href="">Footwear</a>-->
+                        <button class="dropdown-btn">
+                            <a>Footwear</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Men_foot.html">Men</a>
+                            <a href="Women_foot.html">Woman</a>
+                            <a href="Kids_foot.html">Kids</a>
+
+                        </div>
+                        <!--<a class="mdl-navigation__link" href="">Sports,Books & More </a>-->
+                        <button class="dropdown-btn">
+                            <a>Books</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Autobiography.html">Autobiography</a>
+                            <a href="Horror.html">Horror</a>
+                            <a href="Sci_fi.html">Science Fiction</a>
+                            <!---- <a href="#">Romance</a> -->
+                            <a href="Philosophy.html">Philosophy</a>
+
+                        </div>
+                        <button class="dropdown-btn">
+                            <a>Sports</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="Cricket.html">Cricket</a>
+                            <a href="Football.html">Football</a>
+                            <a href="Swimming.html">Swimming</a>
+                            <a href="Camping.html">Camping and Hiking</a>
+                            <a href="Badminton.html">Badminton</a>
+                            <a href="Gym.html">Gym Equipment</a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <div class="mdl-grid">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/mobiles.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Mobiles.html">Mobiles</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/Laptops.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Laptops.html">Laptops</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/bluetooth_speakers.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Bluetooth.html">Bluetooth Speaker</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/headphones_earphones.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Earphones_Headsets.html">Headset</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/pendrives.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Pendrives.html">Pendrives</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/power_banks.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Power_Banks.html">Power Bank</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="mdl-cell mdl-cell--4-col">4</div>-->
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="mdl-grid">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/men_clothes.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Men.html">Men's Ethnic</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/kids_clothes1.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:40%">
+                                    <a href="Kids.html">Kids</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/men_clothes2.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Men.html">Men</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/women_clothes.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Women.html">Women</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/kids_clothes2.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:35%">
+                                    <a href="Kids.html">Kids</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/women_clothes2.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Women.html">Women</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="mdl-cell mdl-cell--4-col">4</div>-->
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="mdl-grid">
+
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/kids_footwear.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Kids_foot.html">Kids Footwear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/men_footwear.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:25%">
+                                    <a href="Men_foot.html">Men's Footwear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/women_footwear.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Women_foot.html">Women's Footwear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/men_footwear2.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Men_foot.html">Men's Footwear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/kids_footwear2.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:20%">
+                                    <a href="Kids_foot.html">Kids Footwear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/women_footwear2.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Women_foot.html">Women's Footwear</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="mdl-cell mdl-cell--4-col">4</div>-->
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="mdl-grid">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/h&f/bed/eCraftIndia Floral Double AC Blanket/hfbdd212-ecraftindia-abstract-floral-printed-reversible-ac-original-imaeah2gvkfgmwpf.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:10%">
+                                    <a href="Bed_room.html">BedRoom Furniture</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/h&f/bed/IWS 104 TC Cotton Double Printed Bedsheet/designer-cb1036-flat-iws-original-imaf3cgcvmmgnfht.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:10%">
+                                    <a href="Bed_room.html">BedRoom Furniture</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/h&f/kitchen/Butterfly Friendly 3 L, 2 L, 5 L Pressure Cooker/8906022173604-butterfly-original-imafggwrmnzn5vgh.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:10%">
+                                    <a href="Kitchen.html">Kitchen Furniture</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/h&f/kitchen/Pigeon Essentials Tawa 27.5 cm diameter/12604-pigeon-original-imaex4xv55qyd66m.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:10%">
+                                    <a href="Kitchen.html">Kitchen Furniture</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/h&f/living/Perfect Homes Zouk TV Entertainment Unit/particle-board-etvobwen0041p-flipkart-perfect-homes-wenge-original-imaf8k5yrpafwgzj.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:10%">
+                                    <a href="Living_room.html">LivingRoom Furniture</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/h&f/wash/Swiss Republic Cotton 460 GSM Bath Towel/swiss-republic-essential-plus-480-gsm-single-value-pack-100-original-imaf76y2t6xbbdhy.jpeg" width="80%"/>
+                                <div text-align:center style="position:relative;left:10%">
+                                    <a href="Bath_room.html">Washroom Furniture</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="mdl-cell mdl-cell--4-col">4</div>-->
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="mdl-grid">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/books/autobiography/3000 stitches-sudha murthy.jpg" width="80%" />
+                                <div text-align:center style="position:relative;<!--left:15%-->">
+                                    <a href="Autobiography.html">Autobiography_Books</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/books/horror/50-greatest-horror-stories-original-imaf9fwhbhhab6hr.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Horror.html">Horror_Books</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/books/philosophy/rahasya-hindi-of-the-secret-original-imadaryjkjtt6cbn.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Philosophy.html">Philosophy_Books</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/books/horror/revenge-of-the-living-dummy-original.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Horror.html">Horror_Books</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/books/science-fiction/2084-original-imafbhz43ybpfdbz.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;<!--left:15%-->">
+                                    <a href="Sci_fi.html">Science_Fiction_Books</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/books/autobiography/12 year slave/12 years of slave.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:5%">
+                                    <a href="Autobiography.html">Autobiography_Books</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="mdl-cell mdl-cell--4-col">4</div>-->
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="mdl-grid">
+
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Sports/Cricket/kit/full.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Cricket.html">Cricket_Gear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Sports/Gym/Weights/combo.jpeg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Gym.html">Gym_Gear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/badmintonkit.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Badminton.html">Badminton_Gear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/swimmingkit.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:15%">
+                                    <a href="Swimming.html">Swimming_Gear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/campingkit.jpg" width="80%" />
+                                <div text-align:center style="position:relative;<!--left:15%-->">
+                                    <a href="Camping.html">Camping and Hiking Gear</a>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                <img src="images/Home Page Images/footballkit.jpg" width="80%" />
+                                <div text-align:center style="position:relative;left:20%">
+                                    <a href="Football.html">Football_Gear</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="mdl-cell mdl-cell--4-col">4</div>-->
+                    </div>
+                </div>
+                <div class="footer">
+                    <a href="#">Help</a>
+                    <a href="#">Terms & Policy</a>
+                </div>
+            </main>
+    </div>
+        
+    </div>
+    <!--<footer class="mdl-mini-footer" style="position:fixed;bottom:0;left:0;width:100%;height:0%">
+         <div class="mdl-mini-footer__left-section">
+             <div class="mdl-logo"></div>
+             <ul class="mdl-mini-footer__link-list">
+                 <li><a href="#">Help</a></li>
+                 <li><a href="#">Privacy & Terms</a></li>
+             </ul>
+         </div>
+     </footer>-->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("footer").style.bottom = "-50px";
+            } else {
+                document.getElementById("footer").style.bottom = "0";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+</body>
+</html>
+
