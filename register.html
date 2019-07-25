@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
+    <style>
+        body{
+            background-image:url('cho.jpg');
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+    </style>
+</head>
+<body align="center" >
+    <br />
+    <h2 align="center">Registration</h2>
+    <br />
+    <form>
+        <table align="center">
+            <tbody>
+                <tr style="text-align:left">
+                    <td><b>Name  </b></td>
+                    <td><input type="text" placeholder="Name" id="tb_name" required></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td style="text-align:left"><b>Email id  </b></td>
+                    <td><input type="email" placeholder="example@abc.com" id="tb_email" required></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td style="text-align:left"><b>Phone Number  </b></td>
+                    <td><input type="tel" id="tb_phnum" maxlength="10" required></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr style="text-align:left">
+                    <td><b>Shop Name  </b></td>
+                    <td><input type="text" id="tb_shopname" required></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr style="text-align:left">
+                    <td><b>Password  </b></td>
+                    <td><input type="password" placeholder="password" id="tb_password" required></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr style="text-align:left">
+                    <td><b>Re-enter Password  </b></td>
+                    <td><input type="password" placeholder="Re-enter password" id="tb_repass" required><br><span id="message"></span></td>
+
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td colspan="2">
+                        <center>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="butt_signup">
+                                sign up
+                            </button>
+                        </center>
+                    </td>
+                </tr>
+
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+
+                <tr colspan="2" style="font-size:15px"><td align="center" ><b>Already a user? </b><a href="Login.html"><b>Login</b></a></></td></tr>
+
+            </tbody>
+
+
+
+        </table>
+    </form>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+    <script src="js/register.js"></script>
+</body>
+</html>

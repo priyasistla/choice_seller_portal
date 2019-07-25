@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Product Details</title>
     <link href="css/style.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -139,19 +140,19 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../images/Sports/Cricket/kit/full.jpeg" class="d-block w-100" alt="First Slide" height="500px" />
+                            <img src="https://choiceseller.blob.core.windows.net/images1/Sports/Cricket/kit/full.jpeg" class="d-block w-100" alt="First Slide" height="500px" />
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/Sports/Cricket/kit/bat.jpeg" class="d-block w-100" alt="Second Slide" height="500px" />
+                            <img src="https://choiceseller.blob.core.windows.net/images1/Sports/Cricket/kit/bat.jpeg" class="d-block w-100" alt="Second Slide" height="500px" />
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/Sports/Cricket/kit/gloves.jpeg" class="d-block w-100" alt="Third Slide" height="500px" />
+                            <img src="https://choiceseller.blob.core.windows.net/images1/Sports/Cricket/kit/gloves.jpeg" class="d-block w-100" alt="Third Slide" height="500px" />
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/Sports/Cricket/kit/kit_bag.jpeg" class="d-block w-100" alt="Fourth Slide" height="500px" />
+                            <img src="https://choiceseller.blob.core.windows.net/images1/Sports/Cricket/kit/kit_bag.jpeg" class="d-block w-100" alt="Fourth Slide" height="500px" />
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/Sports/Cricket/kit/pads.jpeg" class="d-block w-100" alt="Fifth Slide" height="500px" />
+                            <img src="https://choiceseller.blob.core.windows.net/images1/Sports/Cricket/kit/pads.jpeg" class="d-block w-100" alt="Fifth Slide" height="500px" />
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -166,11 +167,11 @@
             </div>
             <div class="col-md-7">
                 <p class="newarrival text-center">NEW</p>
-                <h2 id="product_name"><label id="prod_nm"></label></h2>
+                <h2 id="product_name"><label id="prod_nm">Cricket Kit</label></h2>
 
                 <!-- <input type="text" name="text" placeholder="Product Name" id="name"/>-->
                 <p>Product Code:ABf461</p>
-                <p class="price"><label id="prod_price"></label></p>
+                <p class="price"><label id="prod_price">RS:3599/-</label></p>
                 <p><b>Availability: </b>In Stock</p>
                 <p><b>Condtion: </b>New</p>
                 <p><b>Brand: </b>Denims</p>
@@ -184,19 +185,28 @@
 
                 <br />
                 <br />
-                <button type="button" class="btn-default cart">Add to cart</button>
+                <button type="button" class="btn-default cart"><a href="cart.html">Add to cart</a></button>
 
                 <button type="button" class="btn-default cart" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Buy Now</button>
 
 
                 <br />
                 <br />
-                <a href="#"><p style="padding:15px"><b>Different Merchants</b></p></a>
-
+                <div>
+                    <a href="#"><p style="padding:15px"><b>Different Merchants</b></p></a>
+                    <div class="page-content">
+                        <table class="mdl-data-table mdl-js-data-table mdl-data-table" align="center" id="tab_order">
+                            <thead>
+                                <tr>
+                                    <th>Merchant Name</th>
+                                    <th>Product Price</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </div>
     <div id="id01" class="modal">
 
@@ -222,6 +232,10 @@
                     <tr>
                         <td style="text-align:left"><b>Email-id</b></td>
                         <td><input type="text" placeholder="example@abc.com" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left"><b>Product Name</b></td>
+                        <td><input type="text" placeholder="enter product name" id="pro_name"></td>
                     </tr>
                     <tr>
                         <td style="text-align:left"><b>Address</b></td>
@@ -252,5 +266,6 @@
             crossorigin="anonymous"></script>
     <script src="js/ProductDetails.js"></script>
     <script src="userdetails.js"></script>
+    <script src="js/customer.js"></script>
 </body>
 </html>
